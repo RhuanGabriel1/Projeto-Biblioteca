@@ -1,9 +1,22 @@
-public class livro{
+package src.emprestimo;
+
+public class Livro{
     private Integer id;
     private String nome;
     private Integer ano_publicacao;
     private String autor;
     private String editora;
+
+    public Livro(){
+    }
+
+    public Livro(Integer id, String nome, Integer ano_publicacao, String autor, String editora){
+        this.id = id;
+        this.nome = nome;
+        this.ano_publicacao = ano_publicacao;
+        this.autor = autor;
+        this.editora = editora;
+    }
 
     public Integer getId() {
         return id;
