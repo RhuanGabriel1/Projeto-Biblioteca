@@ -1,9 +1,8 @@
 package src.usuarios;
 
 import java.util.Scanner;
-import interfaces.Menus;
 
-public class Bibliotecario implements Menus.MenuCadastrarUsuario{
+public class Bibliotecario implements src.interfaces.Menus.MenuCadastrarUsuario{
 
     private int id;
     private String nome;
@@ -42,6 +41,7 @@ public class Bibliotecario implements Menus.MenuCadastrarUsuario{
     @Override
     public void criacaoConta() {
         // TODO Auto-generated method stub
+
     }
 
     @Override
