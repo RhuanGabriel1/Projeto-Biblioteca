@@ -11,7 +11,7 @@ public class Emprestimo{
 
     public Emprestimo(){
     }
-    
+
     public Emprestimo(int id, LocalDate data_retirada,LocalDate data_devolucao,LocalDate data_limite){
         this.id = id;
         this.data_retirada = data_retirada;
@@ -44,5 +44,5 @@ public class Emprestimo{
         this.data_limite = data_limite;
     }
 
-    
+
 }

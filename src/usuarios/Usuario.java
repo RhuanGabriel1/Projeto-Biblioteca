@@ -84,5 +84,5 @@ public class Usuario{
     public void setSuspensao(boolean suspensao) {
         this.suspensao = suspensao;
     }
-   
+
 }

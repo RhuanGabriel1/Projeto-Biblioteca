@@ -1,13 +1,11 @@
 package src.usuarios;
 
-import java.util.Scanner;
 
-public class Bibliotecario implements src.interfaces.Menus.MenuCadastrarUsuario{
+public class Bibliotecario{
 
     private int id;
     private String nome;
     private String email;
-    private Usuario usuario;
 
     public Bibliotecario(){
     }
@@ -37,32 +35,6 @@ public class Bibliotecario implements src.interfaces.Menus.MenuCadastrarUsuario{
     public void setEmail(String email) {
         this.email = email;
     }
-    
-    @Override
-    public void criacaoConta() {
-        // TODO Auto-generated method stub
-
-    }
-
-    @Override
-    public void digitarDados() {
-        usuario = new Usuario(
-            coletaString("CPF: "), 
-            coletaString("Celular"), 
-            coletaString("Nome: "),
-            coletaString("Email: "));
-        
-    }
-
-    private String coletaString(String texto){
-        String txt;
-        try(Scanner input = new Scanner(System.in)){
-            System.out.println(texto);
-            txt = input.nextLine();
-        }
-        return txt;
-    }
-
 
 
 

@@ -10,6 +10,14 @@ public class Livro{
     public Livro(){
     }
 
+    public Livro(String nome, Integer ano_publicacao, String autor, String editora){
+        this.id = -1;
+        this.nome = nome;
+        this.ano_publicacao = ano_publicacao;
+        this.autor = autor;
+        this.editora = editora;
+    }
+
     public Livro(Integer id, String nome, Integer ano_publicacao, String autor, String editora){
         this.id = id;
         this.nome = nome;
