@@ -1,6 +1,7 @@
 package src.cadastros;
 
 import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 //import java.util.regex.Pattern;
 
@@ -29,10 +30,9 @@ public class ColetarDados {
 
     public static String coletaString(String texto/*, Patter regex*/){
         String str;
-        try(Scanner input = new Scanner(System.in)){
-            System.out.print(texto);
-            str = input.nextLine();
-        }
+        Scanner input = new Scanner(System.in);
+        System.out.print(texto);
+        str = input.nextLine();
         return str;
     }
 }
