@@ -1,6 +1,6 @@
 package src.consultas;
 
-public class Consulta implements src.interfaces.Menus.MenuConsultarLivro{
+public class Consulta implements src.interfaces.Menus.MenuConsultarLivro {
 
     @Override
     public void procurarLivro() {

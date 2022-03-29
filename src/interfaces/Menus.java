@@ -1,28 +1,28 @@
 package src.interfaces;
 
-public interface Menus{
+public interface Menus {
 
-    interface DigitarDados{
+    interface DigitarDados {
         void digitarDados();
     }
 
-    interface MenuCadastrarUsuario{
+    interface MenuCadastrarUsuario {
         void criacaoConta();
     }
 
-    interface MenuCadastrarLivro{
+    interface MenuCadastrarLivro {
         void criacaoLivro();
     }
 
-    interface MenuConsultarLivro{
+    interface MenuConsultarLivro {
         void procurarLivro();
     }
 
-    interface MenuEmprestimo{
+    interface MenuEmprestimo {
         void emprestar();
     }
 
-    interface Devolucao{
+    interface Devolucao {
         void devolver();
     }
 }

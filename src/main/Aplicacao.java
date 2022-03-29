@@ -13,7 +13,7 @@ public class Aplicacao {
     public static void main(String[] args) {
         Integer opcaoMenu = 1;
         Boolean erro = false;
-        
+
         CadastrarUsuario cadastrarUsuario;
         CadastrarLivro cadastrarLivro;
         // Consulta consulta;

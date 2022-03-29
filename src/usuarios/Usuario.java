@@ -1,39 +1,40 @@
 package src.usuarios;
-public class Usuario{
+
+public class Usuario {
     private String cpf;
     private String celular;
     private String nome;
     private String email;
-    private int numero_livro;
+    private int numeroLivro;
     private boolean suspensao;
 
-    public Usuario(){
+    public Usuario() {
     }
 
-    public Usuario(String cpf, String celular, String nome, String email){
+    public Usuario(String cpf, String celular, String nome, String email) {
         this.cpf = cpf;
         this.celular = celular;
         this.nome = nome;
         this.email = email;
-        this.numero_livro = 1;
+        this.numeroLivro = 1;
         this.suspensao = false;
     }
 
-    public Usuario(String cpf, String celular, String nome, String email, int numero_livro){
+    public Usuario(String cpf, String celular, String nome, String email, int numeroLivro) {
         this.cpf = cpf;
         this.celular = celular;
         this.nome = nome;
         this.email = email;
-        this.numero_livro = numero_livro;
+        this.numeroLivro = numeroLivro;
         this.suspensao = false;
     }
 
-    public Usuario(String cpf, String celular, String nome, String email, int numero_livro, boolean suspensao){
+    public Usuario(String cpf, String celular, String nome, String email, int numeroLivro, boolean suspensao) {
         this.cpf = cpf;
         this.celular = celular;
         this.nome = nome;
         this.email = email;
-        this.numero_livro = numero_livro;
+        this.numeroLivro = numeroLivro;
         this.suspensao = suspensao;
     }
 
@@ -69,12 +70,12 @@ public class Usuario{
         this.email = email;
     }
 
-    public int getNumero_livro() {
-        return numero_livro;
+    public int getNumeroLivro() {
+        return numeroLivro;
     }
 
-    public void setNumero_livro(int numero_livro) {
-        this.numero_livro = numero_livro;
+    public void setNumeroLivro(int numeroLivro) {
+        this.numeroLivro = numeroLivro;
     }
 
     public boolean isSuspensao() {

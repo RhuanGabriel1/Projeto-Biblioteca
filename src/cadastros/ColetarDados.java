@@ -7,28 +7,27 @@ import java.util.Scanner;
 
 public class ColetarDados {
 
-    public static Integer coletaInteger(String texto, Integer limiteMinimo, Integer limiteMaximo){
+    public static Integer coletaInteger(String texto, Integer limiteMinimo, Integer limiteMaximo) {
         Integer num = -1;
         Scanner input = new Scanner(System.in);
         boolean erro;
-        do{
+        do {
             erro = false;
-            try{
+            try {
                 System.out.print(texto);
                 num = input.nextInt();
-                input.next();
-            }
-            catch(InputMismatchException e){
+                // input.next(); Esta linha está quebrando a aplicação
+            } catch (InputMismatchException e) {
                 System.out.println("Erro! Insira um número inteiro dentro do intervalo para prosseguir.");
                 erro = !erro;
                 input.next();
             }
-        }while(erro || num < limiteMinimo && num > limiteMaximo);
-        input.close();
+        } while (erro || num < limiteMinimo && num > limiteMaximo);
+        // input.close(); Esta linha está quebrando a aplicação
         return num;
     }
 
-    public static String coletaString(String texto/*, Patter regex*/){
+    public static String coletaString(String texto/* , Patter regex */) {
         String str;
         Scanner input = new Scanner(System.in);
         System.out.print(texto);
