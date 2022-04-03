@@ -1,7 +1,6 @@
 package src.cadastros;
 
 import java.util.InputMismatchException;
-import java.util.NoSuchElementException;
 import java.util.Scanner;
 //import java.util.regex.Pattern;
 
@@ -16,18 +15,18 @@ public class ColetarDados {
             try {
                 System.out.print(texto);
                 num = input.nextInt();
-                // input.next(); Esta linha está quebrando a aplicação
+                //input.nextLine(); // Esta linha está quebrando a aplicação
             } catch (InputMismatchException e) {
                 System.out.println("Erro! Insira um número inteiro dentro do intervalo para prosseguir.");
                 erro = !erro;
-                input.next();
+                input.nextLine();
             }
-        } while (erro || num < limiteMinimo && num > limiteMaximo);
-        // input.close(); Esta linha está quebrando a aplicação
+        } while (erro || num < limiteMinimo || num > limiteMaximo);
+        // input.close(); // Esta linha está quebrando a aplicação
         return num;
     }
 
-    public static String coletaString(String texto/* , Patter regex */) {
+    public static String coletaString(String texto/* , Pattern regex */) {
         String str;
         Scanner input = new Scanner(System.in);
         System.out.print(texto);

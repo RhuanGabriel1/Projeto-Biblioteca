@@ -1,5 +1,7 @@
 package src.interfaces;
 
+import src.emprestimo.Livro;
+
 public interface Menus {
 
     interface DigitarDados {
@@ -15,7 +17,7 @@ public interface Menus {
     }
 
     interface MenuConsultarLivro {
-        void procurarLivro();
+        Livro procurarLivro();
     }
 
     interface MenuEmprestimo {
@@ -24,5 +26,9 @@ public interface Menus {
 
     interface Devolucao {
         void devolver();
+    }
+
+    interface RemoveUsuario {
+        void remover();
     }
 }

@@ -7,7 +7,9 @@ public class CadastrarUsuario implements src.interfaces.Menus.MenuCadastrarUsuar
 
     @Override
     public void criacaoConta() {
-        // TODO Auto-generated method stub
+        System.out.println(this.usuario.toString());
+        // TODO
+        // "insert into usuario values(usuario.getCpf(), usuario.getNome(), usuario.getEmail(), usuario.getCelular(), usuario.getsuspensao(), usuario.getNumeroLivro());"
     }
 
     @Override

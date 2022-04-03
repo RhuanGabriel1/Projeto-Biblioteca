@@ -3,10 +3,11 @@ package src.main;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import src.cadastros.CadastrarDevolucao;
+import src.cadastros.CadastrarEmprestimo;
 import src.cadastros.CadastrarLivro;
 import src.cadastros.CadastrarUsuario;
-import src.consultas.Consulta;
-import src.emprestimo.Emprestimo;
+import src.cadastros.RemoverUsuario;
 
 public class Aplicacao {
 
@@ -16,6 +17,9 @@ public class Aplicacao {
 
         CadastrarUsuario cadastrarUsuario;
         CadastrarLivro cadastrarLivro;
+        CadastrarEmprestimo emprestimo;
+        CadastrarDevolucao devolucao;
+        RemoverUsuario remover;
         // Consulta consulta;
         // Emprestimo emprestimo;
 
@@ -29,7 +33,8 @@ public class Aplicacao {
                         System.out.println("Cadastrar livro.........2");
                         System.out.println("Consultar livro.........3");
                         System.out.println("Empréstimo..............4");
-                        System.out.print("Devolução...............5\n-> ");
+                        System.out.println("Devolução...............5");
+                        System.out.print("Remover usuário.........6\n-> ");
                         opcaoMenu = input.nextInt();
                     } catch (InputMismatchException e) {
                         erro = true;
@@ -43,16 +48,30 @@ public class Aplicacao {
                     case 1:
                         cadastrarUsuario = new CadastrarUsuario();
                         cadastrarUsuario.digitarDados();
+                        cadastrarUsuario.criacaoConta();
                         break;
                     case 2:
                         cadastrarLivro = new CadastrarLivro();
                         cadastrarLivro.digitarDados();
+                        cadastrarLivro.criacaoLivro();
                         break;
                     case 3:
+
                         break;
                     case 4:
+                        emprestimo = new CadastrarEmprestimo();
+                        emprestimo.digitarDados();
+                        emprestimo.emprestar();
                         break;
                     case 5:
+                        devolucao = new CadastrarDevolucao();
+                        devolucao.digitarDados();
+                        devolucao.devolver();
+                        break;
+                    case 6:
+                        remover = new RemoverUsuario();
+                        remover.digitarDados();
+                        remover.remover();
                         break;
                 }
             }

@@ -38,6 +38,12 @@ public class Usuario {
         this.suspensao = suspensao;
     }
 
+    @Override
+    public String toString() {
+        return "Usuario [celular=" + celular + ", cpf=" + cpf + ", email=" + email + ", nome=" + nome + ", numeroLivro="
+                + numeroLivro + ", suspensao=" + suspensao + "]";
+    }
+
     public String getCpf() {
         return cpf;
     }

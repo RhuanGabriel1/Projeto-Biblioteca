@@ -6,16 +6,32 @@ public class Livro {
     private Integer anoPublicacao;
     private String autor;
     private String editora;
+    private Integer quantidade;
 
     public Livro() {
     }
 
-    public Livro(String nome, Integer anoPublicacao, String autor, String editora) {
+    public Livro(String nome, Integer anoPublicacao, String autor, String editora, Integer quantidade) {
         this.id = -1;
         this.nome = nome;
         this.anoPublicacao = anoPublicacao;
         this.autor = autor;
         this.editora = editora;
+        this.quantidade = quantidade;
+    }
+
+    @Override
+    public String toString() {
+        return "Livro [anoPublicacao=" + anoPublicacao + ", autor=" + autor + ", editora=" + editora + ", id=" + id
+                + ", nome=" + nome + ", quantidade=" + quantidade + "]";
+    }
+
+    public Integer getQuantidade() {
+        return quantidade;
+    }
+
+    public void setQuantidade(Integer quantidade) {
+        this.quantidade = quantidade;
     }
 
     public Livro(Integer id, String nome, Integer anoPublicacao, String autor, String editora) {

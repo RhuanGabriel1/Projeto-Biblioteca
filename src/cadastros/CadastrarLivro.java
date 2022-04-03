@@ -7,7 +7,9 @@ public class CadastrarLivro implements src.interfaces.Menus.MenuCadastrarLivro, 
 
     @Override
     public void criacaoLivro() {
-        // TODO
+        System.out.println(this.livro.toString());
+        // TODO banco de dados
+        // "insert into livro values(livro.getId(), livro.getNome(), livro.getAutor(), livro.getAno(), livro.getEditora(), livro.getQuantidade())"
     }
 
     @Override
@@ -16,7 +18,9 @@ public class CadastrarLivro implements src.interfaces.Menus.MenuCadastrarLivro, 
                 ColetarDados.coletaString("Nome: "),
                 ColetarDados.coletaInteger("Ano: ", -2000, 2022),
                 ColetarDados.coletaString("Autor: "),
-                ColetarDados.coletaString("Editora: "));
+                ColetarDados.coletaString("Editora: "),
+                ColetarDados.coletaInteger("Insira a quantidade de exemplares: ", 1, 100)
+                );
 
     }
 
