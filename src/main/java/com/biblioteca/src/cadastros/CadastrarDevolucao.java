@@ -1,10 +1,10 @@
-package src.cadastros;
+package com.biblioteca.src.cadastros;
 
 import java.time.LocalDate;
 
-import src.emprestimo.Emprestimo;
+import com.biblioteca.src.emprestimo.Emprestimo;
 
-public class CadastrarDevolucao implements src.interfaces.Menus.Devolucao, src.interfaces.Menus.DigitarDados {
+public class CadastrarDevolucao implements com.biblioteca.src.interfaces.Menus.Devolucao, com.biblioteca.src.interfaces.Menus.DigitarDados {
     Emprestimo emprestimo;
     @Override
     public void devolver(){

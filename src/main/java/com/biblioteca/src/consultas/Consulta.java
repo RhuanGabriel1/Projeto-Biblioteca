@@ -1,10 +1,10 @@
-package src.consultas;
+package com.biblioteca.src.consultas;
 
-import src.cadastros.ColetarDados;
-import src.emprestimo.Livro;
-import src.usuarios.Usuario;
+import com.biblioteca.src.cadastros.ColetarDados;
+import com.biblioteca.src.emprestimo.Livro;
+import com.biblioteca.src.usuarios.Usuario;
 
-public class Consulta implements src.interfaces.Menus.MenuConsultarLivro {
+public class Consulta implements com.biblioteca.src.interfaces.Menus.MenuConsultarLivro {
 
     @Override
     public Livro procurarLivro() {

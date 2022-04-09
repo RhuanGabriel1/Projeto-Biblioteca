@@ -1,8 +1,8 @@
-package src.cadastros;
+package com.biblioteca.src.cadastros;
 
-import src.usuarios.Usuario;
+import com.biblioteca.src.usuarios.Usuario;
 
-public class CadastrarUsuario implements src.interfaces.Menus.MenuCadastrarUsuario, src.interfaces.Menus.DigitarDados{
+public class CadastrarUsuario implements com.biblioteca.src.interfaces.Menus.MenuCadastrarUsuario, com.biblioteca.src.interfaces.Menus.DigitarDados{
     private Usuario usuario;
 
     @Override

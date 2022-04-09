@@ -1,6 +1,6 @@
-package src.interfaces;
+package com.biblioteca.src.interfaces;
 
-import src.emprestimo.Livro;
+import com.biblioteca.src.emprestimo.Livro;
 
 public interface Menus {
 

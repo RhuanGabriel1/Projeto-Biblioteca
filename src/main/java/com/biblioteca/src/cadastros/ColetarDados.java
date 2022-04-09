@@ -1,4 +1,4 @@
-package src.cadastros;
+package com.biblioteca.src.cadastros;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

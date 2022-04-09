@@ -1,13 +1,13 @@
-package src.main;
+package com.biblioteca.src.main;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import src.cadastros.CadastrarDevolucao;
-import src.cadastros.CadastrarEmprestimo;
-import src.cadastros.CadastrarLivro;
-import src.cadastros.CadastrarUsuario;
-import src.cadastros.RemoverUsuario;
+import com.biblioteca.src.cadastros.CadastrarDevolucao;
+import com.biblioteca.src.cadastros.CadastrarEmprestimo;
+import com.biblioteca.src.cadastros.CadastrarLivro;
+import com.biblioteca.src.cadastros.CadastrarUsuario;
+import com.biblioteca.src.cadastros.RemoverUsuario;
 
 public class Aplicacao {
 

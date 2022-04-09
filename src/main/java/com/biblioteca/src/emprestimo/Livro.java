@@ -1,4 +1,4 @@
-package src.emprestimo;
+package com.biblioteca.src.emprestimo;
 
 public class Livro {
     private Integer id;

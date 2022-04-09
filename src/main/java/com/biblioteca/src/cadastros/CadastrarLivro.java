@@ -1,8 +1,8 @@
-package src.cadastros;
+package com.biblioteca.src.cadastros;
 
-import src.emprestimo.Livro;
+import com.biblioteca.src.emprestimo.Livro;
 
-public class CadastrarLivro implements src.interfaces.Menus.MenuCadastrarLivro, src.interfaces.Menus.DigitarDados {
+public class CadastrarLivro implements com.biblioteca.src.interfaces.Menus.MenuCadastrarLivro, com.biblioteca.src.interfaces.Menus.DigitarDados {
     private Livro livro;
 
     @Override

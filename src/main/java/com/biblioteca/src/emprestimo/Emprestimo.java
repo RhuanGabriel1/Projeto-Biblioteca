@@ -1,9 +1,9 @@
-package src.emprestimo;
+package com.biblioteca.src.emprestimo;
 
 import java.time.LocalDate;
 
-import src.usuarios.Bibliotecario;
-import src.usuarios.Usuario;
+import com.biblioteca.src.usuarios.Bibliotecario;
+import com.biblioteca.src.usuarios.Usuario;
 
 public class Emprestimo {
 

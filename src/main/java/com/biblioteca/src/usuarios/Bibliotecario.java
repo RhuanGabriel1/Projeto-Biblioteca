@@ -1,4 +1,4 @@
-package src.usuarios;
+package com.biblioteca.src.usuarios;
 
 public class Bibliotecario {
 

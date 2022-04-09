@@ -1,16 +1,16 @@
-package src.cadastros;
+package com.biblioteca.src.cadastros;
 
 import java.time.LocalDate;
 
 import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
-import src.consultas.Consulta;
-import src.emprestimo.Emprestimo;
-import src.emprestimo.Livro;
-import src.usuarios.Bibliotecario;
-import src.usuarios.Usuario;
+import com.biblioteca.src.consultas.Consulta;
+import com.biblioteca.src.emprestimo.Emprestimo;
+import com.biblioteca.src.emprestimo.Livro;
+import com.biblioteca.src.usuarios.Bibliotecario;
+import com.biblioteca.src.usuarios.Usuario;
 
-public class CadastrarEmprestimo implements src.interfaces.Menus.MenuEmprestimo, src.interfaces.Menus.DigitarDados {
+public class CadastrarEmprestimo implements com.biblioteca.src.interfaces.Menus.MenuEmprestimo, com.biblioteca.src.interfaces.Menus.DigitarDados {
     private Emprestimo emprestimo;
 
     

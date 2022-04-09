@@ -1,9 +1,9 @@
-package src.cadastros;
+package com.biblioteca.src.cadastros;
 
-import src.consultas.Consulta;
-import src.usuarios.Usuario;
+import com.biblioteca.src.consultas.Consulta;
+import com.biblioteca.src.usuarios.Usuario;
 
-public class RemoverUsuario implements src.interfaces.Menus.RemoveUsuario, src.interfaces.Menus.DigitarDados {
+public class RemoverUsuario implements com.biblioteca.src.interfaces.Menus.RemoveUsuario, com.biblioteca.src.interfaces.Menus.DigitarDados {
     Usuario usuario;
     @Override
     public void remover(){
